@@ -43,7 +43,7 @@ const SearchManufacturer = ({
             onChange={(e) => setQuery(e.target.value)}
           />
 
-          <Combobox.Options className="absolute w-full z-50 overflow-y-auto h-60 bg-white">
+          <Combobox.Options className="absolute w-full z-50 overflow-y-auto max-h-60 bg-white">
             {filteredManufacturers.map((item) => (
               <Combobox.Option
                 key={item}
